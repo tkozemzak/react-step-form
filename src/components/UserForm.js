@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import FormUserDetails from './FormUserDetails';
 import FormPersonalDetails from './FormPersonalDetails';
+import Confirm from './Confirm';
 
 const UserForm = () => {
     const [step, setStep] = useState(1)
@@ -35,7 +36,8 @@ const UserForm = () => {
                     <FormUserDetails 
                     nextStep={nextStep} 
                     handleChange={handleChange}
-                    values={values}/>
+                    values={values}
+                    />
                 )
             case 2:
                 return (
@@ -43,11 +45,16 @@ const UserForm = () => {
                     nextStep={nextStep}
                     prevStep={prevStep} 
                     handleChange={handleChange}
-                    values={values}/>
+                    values={values}
+                    />
                 )
             case 3:
                 return (
-                    <h1>Confirm</h1>
+                    <Confirm
+                    nextStep={nextStep}
+                    prevStep={prevStep}
+                    values={values}
+                    />
                 )
             case 4:
                 return (
