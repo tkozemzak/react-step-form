@@ -19,24 +19,24 @@ const FormUserDetails = ({ nextStep, values, handleChange }) => {
             <>
                 <AppBar title="Enter User Details"/>
                 <TextField
-                hintText="Enter your First Name"
-                floatingLabelText="First Name"
-                onChange={handleChange('firstName')}
-                defaultValue={values.firstName}
+                    hintText="Enter your First Name"
+                    floatingLabelText="First Name"
+                    onChange={handleChange('firstName')}
+                    defaultValue={values.firstName}
                 />
                 <br/>
                 <TextField
-                hintText="Enter your Last Name"
-                floatingLabelText="Last Name"
-                onChange={handleChange('lastName')}
-                defaultValue={values.lastName}
+                    hintText="Enter your Last Name"
+                    floatingLabelText="Last Name"
+                    onChange={handleChange('lastName')}
+                    defaultValue={values.lastName}
                 />
                 <br/>
                 <TextField
-                hintText="Enter your Email"
-                floatingLabelText="Email"
-                onChange={handleChange('email')}
-                defaultValue={values.email}
+                    hintText="Enter your Email"
+                    floatingLabelText="Email"
+                    onChange={handleChange('email')}
+                    defaultValue={values.email}
                 />
                 <br/>
                 <RaisedButton
@@ -44,7 +44,7 @@ const FormUserDetails = ({ nextStep, values, handleChange }) => {
                     primary={true}
                     style={styles.button}
                     onClick={continueStep}
-                    />
+                />
             </>
         </MuiThemeProvider>
     )

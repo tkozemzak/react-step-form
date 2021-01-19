@@ -24,28 +24,28 @@ const Confirm = ({ nextStep, prevStep, values }) => {
                 <AppBar title="Confirm User Data"/>
                 <List>
                     <ListItem
-                    primaryText="First Name"
-                    secondaryText={ values.firstName }
+                        primaryText="First Name"
+                        secondaryText={ values.firstName }
                     />
                     <ListItem
-                    primaryText="Last Name"
-                    secondaryText={ values.lastName }
+                        primaryText="Last Name"
+                        secondaryText={ values.lastName }
                     />
                     <ListItem
-                    primaryText="Email"
-                    secondaryText={ values.email }
+                        primaryText="Email"
+                        secondaryText={ values.email }
                     />
                     <ListItem
-                    primaryText="Occupation"
-                    secondaryText={ values.occupation }
+                        primaryText="Occupation"
+                        secondaryText={ values.occupation }
                     />
                     <ListItem
-                    primaryText="City"
-                    secondaryText={ values.city }
+                        primaryText="City"
+                        secondaryText={ values.city }
                     />
                     <ListItem
-                    primaryText="Bio"
-                    secondaryText={ values.bio }
+                        primaryText="Bio"
+                        secondaryText={ values.bio }
                     />
                 </List>
                 <RaisedButton
@@ -55,10 +55,10 @@ const Confirm = ({ nextStep, prevStep, values }) => {
                     onClick={backStep}
                     />
                 <RaisedButton
-                label="Confirm & Continue"
-                primary={true}
-                style={styles.button}
-                onClick={continueStep}
+                    label="Confirm & Continue"
+                    primary={true}
+                    style={styles.button}
+                    onClick={continueStep}
                 />
             </>
         </MuiThemeProvider>

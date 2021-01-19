@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import FormUserDetails from './FormUserDetails';
 import FormPersonalDetails from './FormPersonalDetails';
 import Confirm from './Confirm';
+import Success from './Success';
 
 const UserForm = () => {
     const [step, setStep] = useState(1)
@@ -27,8 +28,6 @@ const UserForm = () => {
         setValues({...values, [input]: e.target.value})
         console.log("state:", values);
     }
-
-   
 
         switch(step) {
             case 1:
@@ -58,7 +57,7 @@ const UserForm = () => {
                 )
             case 4:
                 return (
-                    <h1>Success</h1>
+                    <Success />
                 )
         }
             

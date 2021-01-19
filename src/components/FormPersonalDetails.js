@@ -48,12 +48,12 @@ const FormPersonalDetails = ({ nextStep, prevStep, values, handleChange }) => {
                     secondary={true}
                     style={styles.button}
                     onClick={backStep}
-                    />
+                />
                 <RaisedButton
-                label="Continue"
-                primary={true}
-                style={styles.button}
-                onClick={continueStep}
+                    label="Continue"
+                    primary={true}
+                    style={styles.button}
+                    onClick={continueStep}
                 />
             </>
         </MuiThemeProvider>
